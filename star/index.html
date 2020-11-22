@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html>  
+
+<head>
+    <title>home page </title>
+    
+    
+    <style>
+        body {
+            background-color:darkgrey;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .herder-section{
+            background-color:lightgrey;
+            margin:50px;
+            padding:50px;
+            color:black;
+            
+        }
+            .herder-section h1 {
+                position:center;
+                left:-50px
+
+            }
+            .herder-section h3 {
+                position:center
+               }
+        li input {
+            display:none;
+        }
+        li.edit input {
+            display:inherit;       
+        }
+        .div-button {
+            background-color:gray;
+            display:inline-block;
+            padding:50px;
+            width:50%;
+
+        }
+        .panal {
+            display:inline-block;
+            
+        }
+        
+    </style>
+</head>
+    <body>
+       <section class="herder-section">
+           <h1>Let's learn JavaScrit!</h1>
+           <h3>cause  javascript rocks.</h3>
+         <!--  <input id="num1" type="number" name="firstnumber" value="" /> + <input id="num2" type="number"  name="secondnumber" value="" /> = <input id="num3" />-->
+           <ul id="Checklist">
+               <li >
+                   <samp>Apples</samp>
+                   <input  value="Apples" />
+               </li>
+               <li>
+                   <span>Banans</span>
+                   <input value="Banans" />
+
+               </li>
+               <li ><span>Orange</span>
+               <input value="Orange" />
+               </li>
+           </ul>
+           <div class="div-button">
+                    <h1>LET'S HAVE FUN </h1>    
+                   <button class="button" id="but1">button1</button>
+                   <button class="button"id="but2">button1</button>
+                   <button class="button"id="but3">button1</button>
+                   <button class="button"id="but4">button1</button>
+               
+           </div>
+           <div class="panal">
+               <div class="pannal1">content</div>
+               <div class="panal2">content</div>
+               <div class="panal3">content</div>
+           </div>
+                                                                          
+       </section>
+       <script src="scripts/JavaScript.js"></script>
+       <script>
+           $(document).ready(function () {
+               $('button').on('click', function () {
+                   alert("yay");
+               });
+           });
+       </script>
+    </body>
+</html>
